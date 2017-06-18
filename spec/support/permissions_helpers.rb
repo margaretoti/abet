@@ -34,7 +34,7 @@ module PermissionsHelpers
   end
 
   RSpec.configure do |config|
-    config.include PermissionsHelpers, type: :feature
+    config.include PermissionsHelpers, type: :system
     config.include PermissionsHelpers, type: :controller
   end
 end

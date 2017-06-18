@@ -47,7 +47,6 @@ end
 group :test do
   gem "capybara"
   gem "capybara-selenium"
-  gem "database_cleaner"
   gem "launchy"
   gem "shoulda-matchers"
 end
@@ -58,5 +57,9 @@ group :development, :test do
   gem "byebug"
   gem "factory_girl_rails"
   gem "pry-rails"
-  gem "rspec-rails"
+  gem "rspec-core", github: "rspec/rspec-core"
+  gem "rspec-mocks", github: "rspec/rspec-mocks"
+  gem "rspec-expectations", github: "rspec/rspec-expectations"
+  gem "rspec-support", github: "rspec/rspec-support"
+  gem "rspec-rails", github: "rspec/rspec-rails", branch: "integrate-with-system-test"
 end

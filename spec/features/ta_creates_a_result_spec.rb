@@ -4,6 +4,7 @@ feature "TA creates a result" do
   scenario "for an assignment" do
     assignment = create(:assignment)
     department = assignment.subject_department
+    binding.pry
     user = user_with_results_access_to(department)
 
     visit manage_results_subjects_path(as: user)
