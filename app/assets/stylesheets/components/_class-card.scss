@@ -8,13 +8,13 @@
 
 .class-card-subject-title {
   color: $white;
-  font-size: 140%;
+  font-family: $sans-serif-narrow;
+  font-size: 165%;
   margin: 0;
 }
 
 .class-card-heading-outcomes {
   color: tint($medium-gray, 18%);
-  font-family: $serif;
   margin-bottom: 0;
 }
 
@@ -74,8 +74,7 @@
 .class-card-assignment {
   @include margin(0 null $smallest-spacing);
   font-family: $sans-serif-narrow;
-  font-size: 125%;
-  font-weight: bolder;
+  font-size: 120%;
   margin-bottom: 0.5em;
 
   &.add-assignment {
