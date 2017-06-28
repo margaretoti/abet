@@ -38,6 +38,7 @@
       <% end %>
       <%= link_to t(".delete_outcome_coverage"),
             manage_assignments_outcome_coverage_path(outcome_coverage),
+            class: "delete-outcome-coverage",
             method: :delete,
             data: { confirm: t(".delete_outcome_coverage_confirmation") } %>
     </div>
